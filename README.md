@@ -1,4 +1,4 @@
 # ipfailover-script
 
 
-run ./gen.sh can generate the ipfailover check.sh and notify.sh
+run ./gen.sh on master can generate the ipfailover check.sh and notify.sh
