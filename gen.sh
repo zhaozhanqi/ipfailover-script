@@ -1,6 +1,6 @@
 #! /bin/sh
 
-serviceip=`oc get svc router | tail -1 | awk '{ print $2 }'`
+serviceip=`oc get svc router | tail -1 | awk '{ print $3 }'`
 echo "</dev/tcp/${serviceip}/80" > /root/check.sh
 
 cat <<EOF > notify.sh
